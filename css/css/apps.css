@@ -1,0 +1,144 @@
+/* Estilo general */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Encabezado negro */
+.header {
+  background: #000;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #00e0d0;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #f9f9f9, #eaf8ff);
+  padding: 3rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.3rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.hero-image img {
+  max-width: 240px;
+  border-radius: 12px;
+}
+
+/* Sección de contenido */
+.info-section {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+
+.info-section h2 {
+  font-size: 1.8rem;
+  color: #28a745;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.info-section p, .info-section li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  text-align: justify;
+}
+
+.info-section ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+/* Botón destacado */
+.btn-volver {
+  display: inline-block;
+  margin-top: 2rem;
+  background: #28a745;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-volver:hover {
+  background: #1e7e34;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
