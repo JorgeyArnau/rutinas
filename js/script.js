@@ -9,3 +9,10 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+
+// Activa/desactiva el menú desplegable en móvil
+function toggleDropdown(e) {
+  e.preventDefault();
+  const menu = document.getElementById('dropdownMenu');
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
