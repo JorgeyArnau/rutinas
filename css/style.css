@@ -177,4 +177,49 @@ footer {
   color: #fff;
   font-size: 0.9rem;
 }
+/* Menú desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropdown-toggle {
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: 180px;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  padding: 0.5rem 0;
+}
+
+.dropdown .dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1.2rem;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.dropdown .dropdown-menu a:hover {
+  background-color: #222;
+}
+
+/* Mostrar menú al pasar el ratón */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 
