@@ -6,6 +6,59 @@
   <title>Rutina Definición por Nivel</title>
   <link rel="stylesheet" href="css/app.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    .explicacion-niveles {
+      background: linear-gradient(135deg, #fdfbfb, #ebedee);
+      padding: 2rem 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .explicacion-niveles .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .explicacion-niveles p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      text-align: center;
+      color: #333;
+      font-weight: 400;
+    }
+    .info-section h2 {
+      color: #0077cc;
+    }
+    .faq-section {
+      background: #f8f9fa;
+      padding: 2rem;
+      margin-top: 3rem;
+      border-top: 1px solid #ddd;
+    }
+    .faq-section h2 {
+      font-size: 2rem;
+      color: #333;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .faq {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      margin-bottom: 1.5rem;
+    }
+    .faq-item h3 {
+      font-size: 1.2rem;
+      color: #0077cc;
+      margin-bottom: 0.5rem;
+    }
+    .faq-item p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
   <header class="header">
@@ -29,11 +82,12 @@
       </div>
     </div>
   </section>
-<section class="explicacion-niveles">
-  <div class="container">
-    <p>No todos los entrenamientos sirven para todos. El progreso depende de adaptar la rutina a tu nivel físico y experiencia. Aquí puedes seleccionar tu nivel actual —principiante, intermedio o avanzado— y accederás a un plan estructurado, realista y basado en evidencia científica para ayudarte a definir tu cuerpo de forma eficiente y segura.</p>
-  </div>
-</section>
+
+  <section class="explicacion-niveles">
+    <div class="container">
+      <p>No todos los entrenamientos sirven para todos. El progreso depende de adaptar la rutina a tu nivel físico y experiencia. Aquí puedes seleccionar tu nivel actual —principiante, intermedio o avanzado— y accederás a un plan estructurado, realista y basado en evidencia científica para ayudarte a definir tu cuerpo de forma eficiente y segura.</p>
+    </div>
+  </section>
 
   <section id="niveles" class="nivel-selector">
     <button onclick="mostrarRutina('principiante')">Principiante</button>
@@ -43,107 +97,85 @@
 
   <section id="principiante" class="info-section rutina hidden">
     <h2>Rutina Principiante</h2>
-    <p>Basada en recomendaciones de la ACSM para adultos principiantes (ACSM Guidelines, 2011). Objetivo: adaptar el cuerpo al movimiento, fomentar la adherencia y mejorar la movilidad y la resistencia básica.</p>
     <div class="dia-entrenamiento">
-      <h3>Lunes - Adaptación general</h3>
-      <p><strong>Sentadillas al aire:</strong> 3x12-15. Enfócate en profundidad sin perder control lumbar.</p>
-      <p><strong>Flexiones sobre rodillas:</strong> 3x10. Inicia apoyando las rodillas si aún no puedes mantener el cuerpo rígido completo.</p>
-      <p><strong>Remo con banda:</strong> 3x12. Controla el retorno y activa escapulas.</p>
+      <h3>Lunes - Cuerpo completo</h3>
+      <p><strong>Sentadilla al aire:</strong> 3x15. Enfócate en mantener la espalda recta y bajar controladamente.</p>
+      <p><strong>Flexiones inclinadas:</strong> 3x10. Apoya manos sobre una superficie elevada si eres nuevo.</p>
+      <p><strong>Remo con banda:</strong> 3x12. Mantén los codos cerca del cuerpo.</p>
     </div>
     <div class="dia-entrenamiento">
-      <h3>Miércoles - Core y cardio ligero</h3>
-      <p><strong>Plancha:</strong> 3x30 segundos. Cadera alineada, sin arquear.</p>
-      <p><strong>Paseo a paso rápido:</strong> 20 minutos. Zona 2 de frecuencia cardíaca (~60–70% FCmáx).</p>
+      <h3>Miércoles - Core y cardio</h3>
+      <p><strong>Plancha:</strong> 3x30 segundos. Aprieta glúteos y abdomen.</p>
+      <p><strong>Bicicleta estática:</strong> 15 minutos. Ritmo moderado.</p>
     </div>
     <div class="dia-entrenamiento">
-      <h3>Viernes - Refuerzo funcional</h3>
-      <p><strong>Puente de glúteos:</strong> 3x15. Mantén 2 seg en contracción.</p>
-      <p><strong>Press de hombros con bandas:</strong> 3x12.</p>
-      <p><strong>Escalera o subida de banco:</strong> 3x10 por pierna.</p>
+      <h3>Viernes - Full Body</h3>
+      <p><strong>Puente de glúteos:</strong> 3x12. Activa bien los glúteos.</p>
+      <p><strong>Press de hombros con botellas:</strong> 3x10. Eleva controladamente.</p>
+      <p><strong>Marcha rápida:</strong> 20 minutos.</p>
     </div>
   </section>
 
   <section id="intermedio" class="info-section rutina hidden">
     <h2>Rutina Intermedio</h2>
-    <p>Diseñada con una división torso-pierna + metabólica. Recomendaciones inspiradas en Schoenfeld et al. (2016) para mantener masa muscular durante definición.</p>
     <div class="dia-entrenamiento">
-      <h3>Lunes - Tren inferior</h3>
-      <p><strong>Sentadilla goblet:</strong> 4x10.</p>
-      <p><strong>Zancadas con mancuernas:</strong> 3x12 por pierna.</p>
-      <p><strong>Peso muerto rumano:</strong> 3x10.</p>
+      <h3>Lunes - Tren inferior + HIIT</h3>
+      <p><strong>Sentadilla con peso:</strong> 4x10. Mantén el peso centrado.</p>
+      <p><strong>Zancadas caminando:</strong> 3x12/12. Activa el core.</p>
+      <p><strong>Sprint 30" + 30" descanso:</strong> 10 repeticiones.</p>
     </div>
     <div class="dia-entrenamiento">
-      <h3>Martes - Tren superior</h3>
-      <p><strong>Press banca con barra:</strong> 4x8.</p>
-      <p><strong>Dominadas asistidas:</strong> 3x fallo.</p>
-      <p><strong>Press militar sentado:</strong> 3x10.</p>
+      <h3>Miércoles - Tren superior</h3>
+      <p><strong>Press banca:</strong> 4x8. Tiempos controlados.</p>
+      <p><strong>Remo con barra:</strong> 3x10. Evita encorvarte.</p>
+      <p><strong>Dominadas asistidas:</strong> 3x hasta fallo.</p>
     </div>
     <div class="dia-entrenamiento">
-      <h3>Jueves - HIIT + Core</h3>
-      <p><strong>Circuito:</strong> 30" burpees + 30" descanso, 8 rondas.</p>
-      <p><strong>Crunch en V:</strong> 3x20.</p>
-      <p><strong>Plancha con elevación alterna de pierna:</strong> 3x12.</p>
-    </div>
-    <div class="dia-entrenamiento">
-      <h3>Viernes - Tren superior 2</h3>
-      <p><strong>Remo con barra:</strong> 4x8.</p>
-      <p><strong>Fondos paralelas:</strong> 3x12.</p>
-      <p><strong>Curl bíceps + tríceps cuerda:</strong> 3x10 cada uno.</p>
+      <h3>Viernes - Metabólico + Core</h3>
+      <p><strong>Circuito:</strong> burpees + escaladores + squat jump, 3 rondas x 10 reps.</p>
+      <p><strong>Crunch en V:</strong> 3x15.</p>
+      <p><strong>Plancha lateral:</strong> 2x30 segundos por lado.</p>
     </div>
   </section>
 
   <section id="avanzado" class="info-section rutina hidden">
     <h2>Rutina Avanzado</h2>
-    <p>Planificación de 5 días basada en principios de periodización ondulada y énfasis en gasto calórico total. Referencias: Helms et al. (2014), Krieger (2010).</p>
     <div class="dia-entrenamiento">
-      <h3>Lunes - Torso fuerza</h3>
-      <p><strong>Press banca plano:</strong> 5x5.</p>
-      <p><strong>Remo con barra:</strong> 5x6.</p>
-      <p><strong>Press militar:</strong> 4x6.</p>
+      <h3>Lunes - Fuerza Full Body</h3>
+      <p><strong>Sentadilla profunda con barra:</strong> 5x5. Control de descenso y movilidad de tobillo.</p>
+      <p><strong>Press militar:</strong> 4x6. Mantén tensión abdominal.</p>
+      <p><strong>Peso muerto rumano:</strong> 4x8. Enfócate en glúteo e isquio.</p>
     </div>
     <div class="dia-entrenamiento">
-      <h3>Martes - Piernas fuerza</h3>
-      <p><strong>Sentadilla frontal:</strong> 4x6.</p>
-      <p><strong>Peso muerto convencional:</strong> 3x5.</p>
-      <p><strong>Elevaciones de talones:</strong> 3x20.</p>
+      <h3>Miércoles - Hipertrofia Torso</h3>
+      <p><strong>Superserie:</strong> jalón al pecho + press inclinado con mancuernas, 4x10.</p>
+      <p><strong>Fondos en paralelas:</strong> 3x fallo.</p>
+      <p><strong>Curl martillo + elevaciones laterales:</strong> 3x12 cada uno.</p>
     </div>
     <div class="dia-entrenamiento">
-      <h3>Jueves - Torso hipertrofia</h3>
-      <p><strong>Superserie:</strong> jalón al pecho + press inclinado mancuerna, 4x10.</p>
-      <p><strong>Cruces en polea + aperturas laterales:</strong> 3x12.</p>
-      <p><strong>Fondos lastrados:</strong> 3x fallo.</p>
-    </div>
-    <div class="dia-entrenamiento">
-      <h3>Viernes - Pierna hipertrofia</h3>
-      <p><strong>Prensa inclinada:</strong> 4x10.</p>
-      <p><strong>Hip thrust con barra:</strong> 4x12.</p>
-      <p><strong>Step-ups + desplantes:</strong> 3x12 por pierna.</p>
-    </div>
-    <div class="dia-entrenamiento">
-      <h3>Sábado - HIIT metabólico + core</h3>
-      <p><strong>EMOM 18 min:</strong> 5 burpees + 10 swings + 15 saltos a cajón.</p>
-      <p><strong>Plancha con desplazamiento:</strong> 3x40".</p>
-      <p><strong>Crunch con carga:</strong> 3x15.</p>
+      <h3>Viernes - Cardio + Core avanzado</h3>
+      <p><strong>EMOM 20 min:</strong> 5 burpees + 10 swing kettlebell + 15 saltos al cajón.</p>
+      <p><strong>Rueda abdominal:</strong> 3x10 reps.</p>
+      <p><strong>Crunch con cable:</strong> 3x15.</p>
     </div>
   </section>
 
-  <section class="info-section">
-    <h2>Referencias</h2>
-    <ul>
-      <li>ACSM. (2011). Guidelines for Exercise Testing and Prescription.</li>
-      <li>Schoenfeld, B. J. et al. (2016). Journal of Strength and Conditioning Research.</li>
-      <li>Helms, E. R. et al. (2014). Muscle & Strength Pyramid: Training.</li>
-      <li>Krieger, J. (2010). Single vs. multiple sets of resistance exercise. Sports Medicine.</li>
-    </ul>
-  </section>
-   <section class="info-section" id="faq">
+  <section class="faq-section">
     <h2>Preguntas Frecuentes</h2>
-    <ul>
-      <li><strong>¿Debo hacer cardio todos los días?</strong><br>No. En definición, es más importante el déficit calórico y mantener masa muscular. El cardio debe ser estratégico y no excesivo.</li>
-      <li><strong>¿Qué dieta debo seguir?</strong><br>Alta en proteínas (~1.8-2.2g/kg de peso), control de calorías, y rica en vegetales y fibra. Reducir azúcares simples y priorizar comida real.</li>
-      <li><strong>¿Sirve entrenar con poco peso y muchas repeticiones?</strong><br>No necesariamente. El estímulo debe ser suficiente para mantener masa muscular. Pesos medios + control de descanso son más eficaces.</li>
-      <li><strong>¿Es mejor entrenar en ayunas?</strong><br>Depende. No hay evidencia clara de que ayunar mejore resultados si el balance calórico es igual.</li>
-    </ul>
+    <div class="faq">
+      <div class="faq-item">
+        <h3>¿Cuánto tiempo debo seguir una rutina antes de cambiarla?</h3>
+        <p>Se recomienda seguir una rutina entre 6 y 8 semanas antes de evaluar progreso y considerar ajustes según objetivos.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Es necesario entrenar con pesas para definir?</h3>
+        <p>Sí. El entrenamiento de fuerza ayuda a preservar masa muscular mientras reduces grasa corporal.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Puedo hacer cardio todos los días?</h3>
+        <p>Depende de la intensidad. Cardio moderado (como caminar) puede hacerse a diario, mientras que HIIT debe espaciarse para evitar sobrecarga.</p>
+      </div>
+    </div>
   </section>
 
   <footer>
@@ -159,6 +191,3 @@
   </script>
 </body>
 </html>
-
-
-  
