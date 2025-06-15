@@ -112,6 +112,32 @@ body {
   border-radius: 12px;
 }
 
+/* Nivel selector */
+.nivel-selector {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.nivel-selector button {
+  background: var(--primario);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.nivel-selector button:hover {
+  background: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Info Sections */
 .info-section {
   padding: 4rem 2rem;
