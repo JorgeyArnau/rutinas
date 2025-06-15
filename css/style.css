@@ -255,5 +255,11 @@ footer {
   line-height: 1.5;
   color: #444;
 }
+.info-section h2 {
+  font-size: 2rem;
+  color: var(--verde);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
 
 
