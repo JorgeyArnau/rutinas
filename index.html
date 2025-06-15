@@ -18,14 +18,14 @@
   <header class="navbar horizontal">
     <div class="nav-container">
       <a class="logo" href="index.html">Salud&nbsp;&Deporte</a>
-     <nav class="nav-links horizontal">
+    <nav class="nav-links horizontal">
   <a href="index.html">Inicio</a>
   <a href="#beneficios">Beneficios</a>
   <a href="#tipos">Tipos</a>
-  
+
   <div class="dropdown">
-    <a href="#rutinas" class="dropdown-toggle">Rutinas ▾</a>
-    <div class="dropdown-menu">
+    <a href="#rutinas" class="dropdown-toggle" onclick="toggleDropdown(event)">Rutinas ▾</a>
+    <div class="dropdown-menu" id="dropdownMenu">
       <a href="definicion.html">Definición</a>
       <a href="volumen.html">Volumen</a>
       <a href="tonificacion.html">Tonificación</a>
@@ -33,6 +33,7 @@
     </div>
   </div>
 </nav>
+
 
     </div>
   </header>
