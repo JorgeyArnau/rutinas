@@ -7,6 +7,9 @@
   --gris: #666;
   --primario: #0d6efd;
   --radius: 0.75rem;
+  --bg-dia: #f7f9fc;
+  --borde-dia: #dce3ea;
+  --fondo-preguntas: #fef8e4;
 }
 
 body {
@@ -147,6 +150,67 @@ body {
   color: var(--gris);
 }
 
+/* Día de la semana */
+.dia-entrenamiento {
+  background-color: var(--bg-dia);
+  border: 1px solid var(--borde-dia);
+  border-left: 5px solid var(--primario);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.dia-entrenamiento h3 {
+  color: var(--primario);
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.dia-entrenamiento p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Preguntas frecuentes */
+.faq-section {
+  background-color: var(--fondo-preguntas);
+  padding: 3rem 2rem;
+  border-top: 1px solid #ddd;
+}
+
+.faq-section h2 {
+  text-align: center;
+  color: #c08c00;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  background: #fff;
+  border: 1px solid #eee;
+  border-left: 4px solid #ffd24d;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -177,4 +241,3 @@ footer {
     padding: 0 1rem;
   }
 }
-
