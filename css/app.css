@@ -281,3 +281,25 @@ footer {
     padding: 0 1rem;
   }
 }
+.explicacion-niveles {
+  background: linear-gradient(135deg, #f0f4ff, #eafaf1);
+  padding: 2rem 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.explicacion-niveles .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.explicacion-niveles p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+  color: #333;
+  font-weight: 400;
+}
+
