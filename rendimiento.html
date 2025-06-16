@@ -159,3 +159,17 @@
     </div>
   </div>
 </section>
+ <footer>
+    <p>&copy; 2025 Salud & Deporte | Proyecto educativo</p>
+  </footer>
+
+  <script>
+    function mostrarRutina(nivel) {
+      const secciones = document.querySelectorAll('.rutina');
+      secciones.forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(nivel).classList.remove('hidden');
+    }
+  </script>
+  <script src="js/faq.js"></script>
+</body>
+</html>
