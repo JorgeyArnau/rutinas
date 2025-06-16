@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutina Volumen por Nivel</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">Salud&nbsp;&Deporte</a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="#niveles">Rutina</a>
+      </nav>
+    </div>
+  </header>
 
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Rutinas para Ganar Volumen Muscular</h1>
+        <p>Elige tu nivel y sigue una rutina centrada en la hipertrofia y el desarrollo de masa muscular.</p>
+      </div>
+      <div class="hero-image">
+        <img src="assets/volumen-icon.png" alt="Icono volumen">
+      </div>
+    </div>
+  </section>
+
+  <section class="explicacion-niveles">
+    <div class="container">
+      <p>Estas rutinas están enfocadas en la hipertrofia muscular. Se utilizan técnicas probadas como el entrenamiento con cargas moderadas-altas, repeticiones controladas y un volumen de trabajo progresivo para generar crecimiento muscular en función del nivel.</p>
+    </div>
+  </section>
+
+  <section id="niveles" class="nivel-selector">
+    <button onclick="mostrarRutina('principiante')">Principiante</button>
+    <button onclick="mostrarRutina('intermedio')">Intermedio</button>
+    <button onclick="mostrarRutina('avanzado')">Avanzado</button>
+  </section>
+
+  <section id="principiante" class="info-section rutina hidden">
+    <h2>Rutina Principiante</h2>
+    <div class="dia-entrenamiento">
+      <h3>Lunes - Tren inferior</h3>
+      <p><strong>Sentadilla goblet:</strong> 3x12.</p>
+      <p><strong>Puente de glúteos:</strong> 3x15.</p>
+      <p><strong>Gemelos de pie:</strong> 3x20.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Miércoles - Tren superior</h3>
+      <p><strong>Press con mancuernas:</strong> 3x12.</p>
+      <p><strong>Remo con mancuerna:</strong> 3x12 por lado.</p>
+      <p><strong>Curl bíceps:</strong> 3x15.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Viernes - Full Body</h3>
+      <p><strong>Sentadilla + press:</strong> 3x10.</p>
+      <p><strong>Plancha con toque de hombro:</strong> 3x30 segundos.</p>
+    </div>
+  </section>
+
+  <section id="intermedio" class="info-section rutina hidden">
+    <h2>Rutina Intermedio</h2>
+    <div class="dia-entrenamiento">
+      <h3>Lunes - Piernas</h3>
+      <p><strong>Sentadilla con barra:</strong> 4x8.</p>
+      <p><strong>Zancadas con mancuernas:</strong> 3x10 por pierna.</p>
+      <p><strong>Prensa de piernas:</strong> 3x12.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Miércoles - Torso empuje</h3>
+      <p><strong>Press banca:</strong> 4x8.</p>
+      <p><strong>Press militar:</strong> 3x10.</p>
+      <p><strong>Fondos asistidos:</strong> 3x fallo.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Viernes - Torso tracción</h3>
+      <p><strong>Dominadas asistidas:</strong> 4x8.</p>
+      <p><strong>Remo con barra:</strong> 3x10.</p>
+      <p><strong>Face pull con banda:</strong> 3x15.</p>
+    </div>
+  </section>
+
+  <section id="avanzado" class="info-section rutina hidden">
+    <h2>Rutina Avanzado</h2>
+    <div class="dia-entrenamiento">
+      <h3>Lunes - Empuje</h3>
+      <p><strong>Press banca plano:</strong> 5x5.</p>
+      <p><strong>Press inclinado mancuernas:</strong> 4x8.</p>
+      <p><strong>Fondos lastrados:</strong> 3x6-8.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Miércoles - Piernas</h3>
+      <p><strong>Sentadilla frontal:</strong> 4x6.</p>
+      <p><strong>Peso muerto rumano:</strong> 4x8.</p>
+      <p><strong>Hip thrust:</strong> 4x10.</p>
+    </div>
+    <div class="dia-entrenamiento">
+      <h3>Viernes - Tracción</h3>
+      <p><strong>Dominadas lastradas:</strong> 4x6.</p>
+      <p><strong>Remo en máquina:</strong> 4x10.</p>
+      <p><strong>Face pull + curl martillo:</strong> 3x12.</p>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-question">¿Cuántas calorías debo consumir para volumen?</button>
+        <div class="faq-answer">
+          <p>Se recomienda un superávit calórico de 250-500 kcal sobre tu mantenimiento diario.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Qué tipo de proteína debo tomar?</button>
+        <div class="faq-answer">
+          <p>La proteína de suero (whey) es ideal postentreno, pero también puedes usar claras, pollo, huevos o legumbres.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Es necesario entrenar hasta el fallo?</button>
+        <div class="faq-answer">
+          <p>No siempre. Entrenar a 1-2 repeticiones del fallo es más sostenible y suficiente para progresar.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Cada cuánto debo aumentar el peso?</button>
+        <div class="faq-answer">
+          <p>Cuando completes todas las repeticiones con buena técnica, puedes aumentar peso un 2.5-5%.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Salud & Deporte | Proyecto educativo</p>
+  </footer>
+
+  <script>
+    function mostrarRutina(nivel) {
+      const secciones = document.querySelectorAll('.rutina');
+      secciones.forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(nivel).classList.remove('hidden');
+    }
+  </script>
+  <script src="js/faq.js"></script>
+</body>
+</html>
